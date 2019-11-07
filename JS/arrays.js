@@ -24,7 +24,7 @@ console.log(list);*/
 list.sort(sort);
 console.log(list);*/
 
-list.unshift({product: "milk",  qty: 2, bought: true,});
+/*list.unshift({product: "milk",  qty: 2, bought: true,});
 
 for (let i=1; i<list.length; i++) {
 if (list[i].product==list[0].product) {
@@ -33,6 +33,19 @@ list.shift();
 break;
 }
 }
+console.log(list);*/
+
+let productIsBought = prompt("что купили?");
+
+for (let i=0; i<list.length; i++) {
+    if (list[i].product==productIsBought) {
+        list[i].bought=true;
+    break;
+    }
+    }
+
 console.log(list);
+//console.log(list.find((a)=>{a.product==productIsBought? a.bought=true: })); //как правильно написать такую стрелочную ф-ю?
+
 
 
